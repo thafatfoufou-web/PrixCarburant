@@ -1,0 +1,1018 @@
+/* Base colors */
+html {
+    color: #eaf0ff;
+    background-color: #070b16;
+    background:
+        radial-gradient(1200px 600px at 18% -10%, rgba(56, 189, 248, 0.16), transparent 62%), /* cree un degrade circulaire de couleur */
+        radial-gradient(900px 520px at 82% -5%, rgba(167, 139, 250, 0.15), transparent 64%),
+        radial-gradient(1100px 560px at 18% 118%, rgba(167, 139, 250, 0.10), transparent 64%),
+        radial-gradient(1200px 680px at 92% 120%, rgba(56, 189, 248, 0.09), transparent 66%),
+        linear-gradient(180deg, #070b16, #070b16 40%, #070b16); /* cree un degrade de couleur */
+}
+
+body {
+    color: #eaf0ff;
+}
+
+a {
+    color: #38bdf8;
+}
+
+/* Header colors */
+.app-header {
+    background: rgba(11, 18, 32, 0.78);
+    border-bottom: 1px solid rgba(234, 240, 255, 0.10);
+}
+
+.app-brand {
+    color: #eaf0ff;
+}
+
+.app-nav-link {
+    color: rgba(234, 240, 255, 0.70);
+}
+
+.app-nav-link:hover {
+    background: rgba(56, 189, 248, 0.12);
+    border-color: rgba(56, 189, 248, 0.20);
+}
+
+.is-active {
+    background: linear-gradient(135deg, rgba(56, 189, 248, 0.18), rgba(167, 139, 250, 0.14));
+    border-color: rgba(56, 189, 248, 0.22);
+    color: #eaf0ff;
+}
+
+.app-icon-btn--text {
+    color: #38bdf8;
+    background: rgba(56, 189, 248, 0.1);
+}
+
+.app-icon-btn {
+    background: rgba(11, 18, 32, 0.86);
+    border: 1px solid rgba(234, 240, 255, 0.10);
+    box-shadow: 0 12px 26px rgba(0,0,0,.35);
+}
+
+.app-icon-btn:hover {
+    box-shadow: 0 10px 26px rgba(0,0,0,.45);
+}
+
+/* Mobile header */
+.app-header-mobile {
+    background: rgba(11, 18, 32, 0.9);
+    border-bottom: 1px solid rgba(234, 240, 255, 0.1);
+}
+
+/* Menu colors */
+.menu-toggle-label {
+    background: rgba(56, 189, 248, 0.15);
+}
+
+.hamburger span {
+    background: #38bdf8;
+}
+
+.mobile-menu {
+    background: #070b16;
+}
+
+.mobile-nav-link {
+    color: #eaf0ff;
+}
+
+.mobile-nav-link:hover {
+    background: rgba(56, 189, 248, 0.12);
+}
+
+.mobile-nav-link.is-active {
+    background: rgba(56, 189, 248, 0.18);
+    color: #38bdf8;
+}
+
+.mobile-nav-link:focus {
+    outline-color: rgba(56, 189, 248, 0.50);
+}
+
+.mobile-nav-icon {
+    color: #38bdf8;
+}
+
+.mobile-menu-footer {
+    border-top-color: rgba(234, 240, 255, 0.1);
+}
+
+.mobile-footer-label {
+    color: rgba(234, 240, 255, 0.5);
+}
+
+.mobile-toggle-btn {
+    background: rgba(234, 240, 255, 0.06);
+}
+
+.mobile-toggle-btn.is-active {
+    background: #0b1220;
+    border-color: #38bdf8;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Layout colors */
+.app-footer {
+    border-top: 1px solid rgba(234, 240, 255, 0.10);
+    background: #0b1220;
+}
+
+.footer-title {
+    color: #eaf0ff;
+}
+
+.footer-text {
+    color: #95a3bf;
+}
+
+.footer-link {
+    color: #66b3ff;
+}
+
+.footer-link:hover {
+    color: #99ccff;
+}
+
+.footer-subtext {
+    color: #667085;
+}
+
+.page-title {
+    color: #eaf0ff;
+}
+
+.page-subtitle {
+    color: rgba(234, 240, 255, 0.75);
+}
+
+.feature-item {
+    background: rgba(56, 189, 248, 0.08);
+    color: #38bdf8;
+}
+
+/* Components colors */
+.card {
+    background: linear-gradient(180deg, rgba(11, 18, 32, 0.92), rgba(7, 11, 22, 0.78));
+    border: 1px solid rgba(234, 240, 255, 0.10);
+    box-shadow: 0 18px 56px rgba(0, 0, 0, .55);
+}
+
+.card-hint {
+    color: #a7b3cc;
+}
+
+.form-label {
+    color: rgba(234, 240, 255, 0.72);
+}
+
+.form-select {
+    border: 1px solid rgba(234, 240, 255, 0.14);
+    background: rgba(11, 18, 32, 0.70);
+    color: #eaf0ff;
+    box-shadow: 0 1px 0 rgba(255,255,255,.02);
+}
+
+.form-select:hover {
+    border-color: rgba(56, 189, 248, 0.30);
+}
+
+.form-submit-btn {
+    border: 1px solid rgba(56, 189, 248, 0.30);
+    background: linear-gradient(135deg, rgba(56, 189, 248, 0.12), rgba(167, 139, 250, 0.08));
+    color: #eaf0ff;
+}
+
+.form-submit-btn:hover {
+    box-shadow: 0 10px 26px rgba(0, 0, 0, .45);
+    background: linear-gradient(135deg, rgba(56, 189, 248, 0.18), rgba(167, 139, 250, 0.12));
+    border-color: rgba(56, 189, 248, 0.50);
+}
+
+.form-submit-btn:focus {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .35);
+    outline-color: rgba(56, 189, 248, 0.60);
+}
+
+.last-visit {
+    color: #a7b3cc;
+}
+
+.form-btn-small {
+    border: 1px solid rgba(96, 165, 250, 0.25);
+    background: rgba(11, 18, 32, 0.82);
+    color: #eaf0ff;
+}
+
+.form-btn-small:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .30);
+    background: linear-gradient(135deg, rgba(96, 165, 250, 0.12), rgba(167, 139, 250, 0.08));
+    border-color: rgba(96, 165, 250, 0.45);
+}
+
+.form-btn-small:focus {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .24);
+    outline-color: rgba(96, 165, 250, 0.60);
+}
+
+.form-apply-btn {
+    border: 1px solid rgba(56, 189, 248, 0.28);
+    background: linear-gradient(135deg, rgba(56, 189, 248, 0.14), rgba(167, 139, 250, 0.10));
+    color: #eaf0ff;
+}
+
+.form-apply-btn:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, .35);
+    background: linear-gradient(135deg, rgba(56, 189, 248, 0.20), rgba(167, 139, 250, 0.14));
+    border-color: rgba(56, 189, 248, 0.50);
+}
+
+.form-apply-btn:focus {
+    box-shadow: 0 3px 8px rgba(0, 0, 0, .28);
+    outline-color: rgba(56, 189, 248, 0.60);
+}
+
+/* Step-by-step form - dark mode */
+.form-step {
+    background: rgba(11, 18, 32, 0.5);
+    border: 1px solid rgba(234, 240, 255, 0.06);
+}
+
+.form-step.is-active {
+    background: rgba(11, 18, 32, 0.9);
+    border-color: rgba(56, 189, 248, 0.25);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.form-step.is-completed {
+    background: rgba(34, 197, 94, 0.06);
+    border-color: rgba(34, 197, 94, 0.2);
+}
+
+.step-number {
+    background: rgba(234, 240, 255, 0.08);
+    color: rgba(234, 240, 255, 0.5);
+    border: 2px solid transparent;
+}
+
+.form-step.is-active .step-number {
+    background: linear-gradient(135deg, rgba(56, 189, 248, 0.2), rgba(167, 139, 250, 0.15));
+    color: #38bdf8;
+    border-color: rgba(56, 189, 248, 0.35);
+}
+
+.form-step.is-completed .step-number {
+    background: linear-gradient(135deg, #4ade80, #22c55e);
+    color: #0b1220;
+    border-color: transparent;
+}
+
+.step-title {
+    color: rgba(234, 240, 255, 0.7);
+}
+
+.form-step.is-active .step-title {
+    color: #eaf0ff;
+}
+
+.form-step.is-completed .step-title {
+    color: rgba(234, 240, 255, 0.6);
+}
+
+.step-selected-value {
+    background: rgba(56, 189, 248, 0.12);
+    border: 1px solid rgba(56, 189, 248, 0.2);
+    color: #38bdf8;
+}
+
+.btn-change {
+    background: rgba(234, 240, 255, 0.06);
+    border: 1px solid rgba(234, 240, 255, 0.1);
+    color: rgba(234, 240, 255, 0.7);
+}
+
+.btn-change:hover {
+    background: rgba(56, 189, 248, 0.12);
+    border-color: rgba(56, 189, 248, 0.25);
+    color: #38bdf8;
+}
+
+.btn-reset {
+    background: rgba(248, 113, 113, 0.12);
+    border: 1px solid rgba(248, 113, 113, 0.2);
+    color: #f87171;
+}
+
+.btn-reset:hover {
+    background: rgba(248, 113, 113, 0.18);
+    border-color: rgba(248, 113, 113, 0.3);
+    color: #fca5a5;
+}
+
+.btn-reset:focus {
+    outline: 2px solid rgba(248, 113, 113, 0.4);
+    outline-offset: 2px;
+}
+
+.form-step-select {
+    border: 1px solid rgba(234, 240, 255, 0.14);
+    background: rgba(11, 18, 32, 0.8);
+    color: #eaf0ff;
+}
+
+.form-step-select:hover {
+    border-color: rgba(56, 189, 248, 0.3);
+}
+
+.form-step-select:focus {
+    border-color: #38bdf8;
+    outline-color: rgba(56, 189, 248, 0.4);
+}
+
+.step-help-text {
+    color: rgba(234, 240, 255, 0.6);
+}
+
+.alert {
+    border: 1px solid rgba(234, 240, 255, 0.10);
+    background: rgba(11, 18, 32, 0.84);
+    color: #eaf0ff;
+    box-shadow: 0 16px 34px rgba(0,0,0,.42);
+}
+
+.alert-error {
+    border-color: rgba(251, 113, 133, 0.30);
+    background: rgba(11, 18, 32, 0.70);
+}
+
+.alert-info {
+    border-color: rgba(56, 189, 248, 0.22);
+    background: rgba(11, 18, 32, 0.72);
+    margin-top: 1em;
+}
+
+.empty-state {
+    border: 1px dashed rgba(56, 189, 248, 0.18);
+    background: rgba(11, 18, 32, 0.84);
+}
+
+.empty-text {
+    color: #a7b3cc;
+}
+
+/* Footer section colors */
+.footer-content {
+    border-bottom: 1px solid rgba(234, 240, 255, 0.10);
+}
+
+.footer-icon {
+    color: #38bdf8;
+}
+
+.footer-description {
+    color: rgba(234, 240, 255, 0.7);
+}
+
+.footer-feature {
+    color: #eaf0ff;
+}
+
+.footer-feature svg {
+    color: #38bdf8;
+}
+
+.footer-subtitle {
+    color: #eaf0ff;
+}
+
+.footer-nav-link {
+    color: rgba(234, 240, 255, 0.7);
+}
+
+.footer-nav-link:hover {
+    color: #38bdf8;
+}
+
+.footer-description-small {
+    color: rgba(234, 240, 255, 0.65);
+}
+
+.footer-cyu-link {
+    color: #7dd3fc;
+}
+
+.footer-cyu-link:hover {
+    color: #7dd3fc;
+}
+
+.footer-source-link {
+    color: rgba(234, 240, 255, 0.7);
+}
+
+.footer-source-link:hover {
+    color: #38bdf8;
+}
+
+.source-desc {
+    color: rgba(234, 240, 255, 0.65);
+}
+.footer-bottom .w3c-note {
+    color: rgba(234, 240, 255, 0.6);
+}
+
+.footer-bottom .w3c-note svg {
+    color: #4ade80;
+}
+
+.footer-copyright {
+    color: rgba(234, 240, 255, 0.6);
+}
+
+.footer-version {
+    color: #94a3b8;
+}
+
+.mobile-link-svg {
+    color: #38bdf8;
+}
+
+/* Stations colors */
+.map-section {
+    border: 1px solid rgba(234, 240, 255, 0.10);
+    background: rgba(11, 18, 32, 0.84);
+    box-shadow: 0 18px 56px rgba(0, 0, 0, .55);
+}
+
+.map-link:hover {
+    background: rgba(56, 189, 248, 0.14);
+    box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.35);
+}
+
+.map-overlay polygon.active {
+    fill: rgba(251, 191, 36, 0.55);
+}
+
+.results-head {
+    border-bottom: 1px solid rgba(234, 240, 255, 0.10);
+}
+
+.results-meta {
+    color: #a7b3cc;
+}
+
+.station-card {
+    background: rgba(11, 18, 32, 0.92);
+    border: 1px solid rgba(234, 240, 255, 0.10);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+}
+
+.station-card:hover {
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.45);
+    border-color: rgba(56, 189, 248, 0.22);
+}
+
+.station-header {
+    border-bottom: 1px solid rgba(234, 240, 255, 0.06);
+}
+
+.station-name {
+    color: #eaf0ff;
+}
+
+.station-icon {
+    color: #38bdf8;
+}
+
+.status-open {
+    background: rgba(34, 197, 94, 0.15);
+    color: #4ade80;
+}
+
+.status-closed {
+    background: rgba(107, 114, 128, 0.15);
+    color: #9ca3af;
+}
+
+.station-address-block {
+    color: rgba(234, 240, 255, 0.75);
+}
+
+.address-icon {
+    color: #9ca3af;
+}
+
+.price-item.fuel-gazole {
+    background: linear-gradient(135deg, rgba(56, 189, 248, 0.15), rgba(56, 189, 248, 0.08));
+    border: 1px solid rgba(56, 189, 248, 0.25);
+}
+
+.price-item.fuel-gazole .price-value {
+    color: #38bdf8;
+}
+
+.price-item.fuel-sp95 {
+    background: linear-gradient(135deg, rgba(52, 211, 153, 0.15), rgba(52, 211, 153, 0.08));
+    border: 1px solid rgba(52, 211, 153, 0.25);
+}
+
+.price-item.fuel-sp95 .price-value {
+    color: #34d399;
+}
+
+.price-item.fuel-sp98 {
+    background: linear-gradient(135deg, rgba(251, 191, 36, 0.15), rgba(251, 191, 36, 0.08));
+    border: 1px solid rgba(251, 191, 36, 0.25);
+}
+
+.price-item.fuel-sp98 .price-value {
+    color: #fbbf24;
+}
+
+.price-item.fuel-e10 {
+    background: linear-gradient(135deg, rgba(74, 222, 128, 0.15), rgba(74, 222, 128, 0.08));
+    border: 1px solid rgba(74, 222, 128, 0.25);
+}
+
+.price-item.fuel-e10 .price-value {
+    color: #4ade80;
+}
+
+.price-item.fuel-gpl {
+    background: linear-gradient(135deg, rgba(167, 139, 250, 0.15), rgba(167, 139, 250, 0.08));
+    border: 1px solid rgba(167, 139, 250, 0.25);
+}
+
+.price-item.fuel-gpl .price-value {
+    color: #a78bfa;
+}
+
+.price-label {
+    color: #eaf0ff;
+}
+
+.price-value {
+    color: #38bdf8;
+}
+
+.no-prices {
+    color: rgba(234, 240, 255, 0.5);
+}
+
+.station-address {
+    color: #a7b3cc;
+}
+
+.price-tag {
+    border: 1px solid rgba(234, 240, 255, 0.10);
+    background: linear-gradient(180deg, rgba(11, 18, 32, 0.84), rgba(7, 11, 22, 0.70));
+}
+
+.price-fuel {
+    color: rgba(234, 240, 255, 0.70);
+}
+
+.price-tag .price-value {
+    color: rgba(56, 189, 248, 0.86);
+}
+
+.station-update {
+    color: rgba(234, 240, 255, 0.5);
+    border-top: 1px dashed rgba(234, 240, 255, 0.06);
+}
+
+/* Stats colors */
+.stats-box {
+    background: rgba(11, 18, 32, 0.84);
+}
+
+.stats-value {
+    color: #38bdf8;
+}
+
+.stats-label {
+    color: #a7b3cc;
+}
+
+.histogram-item {
+    background: rgba(56, 189, 248, 0.05);
+}
+
+.histogram-item:hover {
+    background: rgba(56, 189, 248, 0.1);
+}
+
+.rank-badge {
+    background: linear-gradient(135deg, #38bdf8, #a78bfa);
+    color: #fff;
+}
+
+.histogram-label-left {
+    color: #a7b3cc;
+}
+
+.histogram-bar-container {
+    background: rgba(234, 240, 255, 0.08);
+}
+
+.histogram-bar-fill {
+    background: linear-gradient(90deg, #38bdf8, #a78bfa);
+}
+
+.histogram-value-right {
+    color: #eaf0ff;
+}
+
+.histogram-number {
+    color: #38bdf8;
+    font-weight: 800; /* epaisseur de police */
+}
+
+.histogram-count {
+    color: #a7b3cc;
+}
+
+.histogram-label {
+    color: rgba(234, 240, 255, 0.5);
+}
+
+.tech-section-title {
+    color: rgba(234, 240, 255, 0.76);
+}
+
+.stat-card {
+    background: rgba(11, 18, 32, 0.86);
+    border: 1px solid rgba(234, 240, 255, 0.10);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+}
+
+.stat-card:hover {
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.45);
+    border-color: rgba(56, 189, 248, 0.22);
+}
+
+.stat-icon {
+    background: linear-gradient(135deg, rgba(56, 189, 248, 0.15), rgba(167, 139, 250, 0.15));
+}
+
+.stat-icon svg {
+    color: #38bdf8;
+}
+
+.stat-value {
+    color: #eaf0ff;
+}
+
+.stat-label {
+    color: rgba(234, 240, 255, 0.7);
+}
+
+.stat-description {
+    color: rgba(234, 240, 255, 0.75);
+}
+
+.card-title {
+    color: #eaf0ff;
+}
+
+.card-title-icon {
+    color: #38bdf8;
+}
+
+.card-subtitle {
+    color: rgba(234, 240, 255, 0.6);
+}
+
+.empty-state {
+    background: rgba(11, 18, 32, 0.84);
+    border: 2px dashed rgba(234, 240, 255, 0.10);
+}
+
+.empty-state-icon {
+    background: rgba(56, 189, 248, 0.15);
+}
+
+.empty-state-icon svg {
+    color: #38bdf8;
+}
+
+.empty-state-cta {
+    border: 1px solid rgba(56, 189, 248, 0.30);
+    background: linear-gradient(135deg, rgba(56, 189, 248, 0.12), rgba(167, 139, 250, 0.08));
+    color: #eaf0ff;
+    box-shadow: none;
+}
+
+.empty-state-cta:hover {
+    box-shadow: 0 10px 26px rgba(0, 0, 0, .45);
+    background: linear-gradient(135deg, rgba(56, 189, 248, 0.18), rgba(167, 139, 250, 0.12));
+    border-color: rgba(56, 189, 248, 0.50);
+}
+
+.empty-state-cta:focus {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .35);
+    outline-color: rgba(56, 189, 248, 0.60);
+}
+
+/* Contact colors */
+.contact-form-wrapper {
+    background: rgba(11, 18, 32, 0.6);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(234, 240, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.form-input,
+.form-textarea {
+    border: 1px solid rgba(234, 240, 255, 0.12);
+    background: rgba(11, 18, 32, 0.6);
+    color: #eaf0ff;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    border-color: #60a5fa;
+    box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.15);
+    background: rgba(11, 18, 32, 0.6);
+}
+
+.form-input:hover,
+.form-textarea:hover {
+    border-color: rgba(234, 240, 255, 0.25);
+    background: rgba(11, 18, 32, 0.5);
+}
+
+.form-input.is-invalid,
+.form-textarea.is-invalid {
+    border-color: #f87171;
+    background-color: rgba(248, 113, 113, 0.1);
+}
+
+.form-input.is-invalid:focus,
+.form-textarea.is-invalid:focus {
+    border-color: #f87171;
+    box-shadow: 0 0 0 3px rgba(248, 113, 113, 0.15);
+}
+
+.character-count,
+.form-help-text {
+    color: rgba(234, 240, 255, 0.6);
+}
+
+.file-upload-label {
+    border: 2px dashed rgba(234, 240, 255, 0.2);
+    background: rgba(59, 130, 246, 0.05);
+}
+
+.file-upload-label:hover {
+    border-color: rgba(96, 165, 250, 0.4);
+    background: rgba(59, 130, 246, 0.08);
+}
+
+.file-upload-label.is-dragover {
+    border-color: #60a5fa;
+    background: rgba(59, 130, 246, 0.12);
+}
+
+.file-upload-icon {
+    background: rgba(59, 130, 246, 0.15);
+    color: #60a5fa;
+}
+
+.file-upload-main {
+    color: #eaf0ff;
+}
+
+.file-upload-sub {
+    color: rgba(234, 240, 255, 0.6);
+}
+
+.file-upload-preview {
+    border: 2px solid rgba(96, 165, 250, 0.3);
+    background: rgba(59, 130, 246, 0.08);
+}
+
+.file-preview-name {
+    color: #eaf0ff;
+}
+
+.file-preview-size {
+    color: rgba(234, 240, 255, 0.6);
+}
+
+.file-remove-btn {
+    background: rgba(248, 113, 113, 0.15);
+    color: #f87171;
+}
+
+.file-remove-btn:hover {
+    background: rgba(248, 113, 113, 0.25);
+}
+
+.form-error {
+    color: #f87171;
+}
+
+.contact-info-card {
+    background: rgba(11, 18, 32, 0.6);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(234, 240, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.contact-info-title {
+    color: #eaf0ff;
+}
+
+.contact-info-item {
+    border-bottom: 1px solid rgba(234, 240, 255, 0.1);
+}
+
+.contact-info-icon {
+    background: rgba(59, 130, 246, 0.15);
+    color: #60a5fa;
+}
+
+.contact-info-label {
+    color: #eaf0ff;
+}
+
+.contact-info-value {
+    color: rgba(234, 240, 255, 0.7);
+}
+
+/* Movie/Geo colors */
+.movie-original {
+    color: #a7b3cc;
+}
+
+.movie-year {
+    border: 1px solid rgba(234, 240, 255, 0.10);
+    background: rgba(11, 18, 32, 0.80);
+}
+
+.movie-year-label {
+    color: #a7b3cc;
+}
+
+.movie-description {
+    color: rgba(234, 240, 255, 0.78);
+}
+
+.movie-poster, .movie-banner {
+    border: 1px solid rgba(234, 240, 255, 0.10);
+    box-shadow: 0 18px 56px rgba(0, 0, 0, .55);
+}
+
+.movie-poster-caption {
+    color: #a7b3cc;
+}
+
+.geo-info {
+    border: 1px solid rgba(234, 240, 255, 0.10);
+    background: rgba(11, 18, 32, 0.82);
+    box-shadow: 0 10px 26px rgba(0, 0, 0, .45);
+}
+
+.geo-row {
+    border-bottom: 1px solid rgba(234, 240, 255, 0.10);
+}
+
+.geo-label {
+    color: #a7b3cc;
+}
+
+.geo-value {
+    color: #eaf0ff;
+}
+
+.region-label {
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9), 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+.geo-loader {
+    background-color: #1e3a5f;
+    border: 1px solid #2d5a8e;
+    color: #a8d4ff;
+}
+
+.geo-spinner {
+    border: 3px solid #3a3a3a;
+    border-top: 3px solid #4da3ff;
+}
+
+.station-hours-summary {
+    color: #38bdf8;
+}
+
+.station-hours-full {
+    background: rgba(56, 189, 248, 0.08);
+    border: 1px solid rgba(56, 189, 248, 0.18);
+    color: #eaf0ff;
+}
+
+/* View toggle button - dark mode */
+.view-toggle-btn {
+     display: inline-flex;
+     align-items: center;
+     gap: 6px;
+     padding: 6px 12px;
+     background: rgba(11, 18, 32, 0.86);
+     border: 1px solid rgba(234, 240, 255, 0.10);
+     border-radius: 8px;
+     color: #eaf0ff;
+     font-size: 13px;
+     font-weight: 500;
+     text-decoration: none;
+     transition: all 0.2s ease;
+     cursor: pointer;
+}
+
+.view-toggle-btn:hover {
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+     background: rgba(11, 18, 32, 0.95);
+}
+
+.view-toggle-btn:focus {
+     outline: 2px solid rgba(56, 189, 248, 0.50);
+     outline-offset: 2px;
+}
+
+.view-toggle-btn svg {
+     width: 16px;
+     height: 16px;
+     flex-shrink: 0;
+}
+
+.toggle-text {
+     white-space: nowrap;
+}
+
+/* Price badges for simple view - dark mode (same as price-item) */
+.price-badge.fuel-gazole {
+    background: linear-gradient(135deg, rgba(56, 189, 248, 0.15), rgba(56, 189, 248, 0.08));
+    border: 1px solid rgba(56, 189, 248, 0.25);
+}
+
+.price-badge.fuel-gazole .price-badge-label {
+    color: #eaf0ff;
+}
+
+.price-badge.fuel-gazole .price-badge-value {
+    color: #38bdf8;
+}
+
+.price-badge.fuel-sp95 {
+    background: linear-gradient(135deg, rgba(52, 211, 153, 0.15), rgba(52, 211, 153, 0.08));
+    border: 1px solid rgba(52, 211, 153, 0.25);
+}
+
+.price-badge.fuel-sp95 .price-badge-label {
+    color: #eaf0ff;
+}
+
+.price-badge.fuel-sp95 .price-badge-value {
+    color: #34d399;
+}
+
+.price-badge.fuel-sp98 {
+    background: linear-gradient(135deg, rgba(251, 191, 36, 0.15), rgba(251, 191, 36, 0.08));
+    border: 1px solid rgba(251, 191, 36, 0.25);
+}
+
+.price-badge.fuel-sp98 .price-badge-label {
+    color: #eaf0ff;
+}
+
+.price-badge.fuel-sp98 .price-badge-value {
+    color: #fbbf24;
+}
+
+.price-badge.fuel-e10 {
+    background: linear-gradient(135deg, rgba(74, 222, 128, 0.15), rgba(74, 222, 128, 0.08));
+    border: 1px solid rgba(74, 222, 128, 0.25);
+}
+
+.price-badge.fuel-e10 .price-badge-label {
+    color: #eaf0ff;
+}
+
+.price-badge.fuel-e10 .price-badge-value {
+    color: #4ade80;
+}
+
+.price-badge.fuel-gpl {
+    background: linear-gradient(135deg, rgba(167, 139, 250, 0.15), rgba(167, 139, 250, 0.08));
+    border: 1px solid rgba(167, 139, 250, 0.25);
+}
+
+.price-badge.fuel-gpl .price-badge-label {
+    color: #eaf0ff;
+}
+
+.price-badge.fuel-gpl .price-badge-value {
+    color: #a78bfa;
+}

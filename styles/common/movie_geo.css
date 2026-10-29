@@ -1,0 +1,141 @@
+.movie-layout {
+     display: flex; /* permet d'utiliser flexbox pour organiser les elements */
+     flex-wrap: wrap; /* permet aux elements de passer a la ligne suivante */
+     gap: 18px; /* ajoute un espace entre les elements */
+     align-items: start; /* aligne le contenu en haut */
+}
+
+.movie-poster-col {
+     flex: 0 1 360px; /* empeche l'element de grandir avec une base de 360px */
+     min-width: 220px;
+}
+
+.movie-info-col {
+     flex: 1 1 400px;
+     min-width: 280px;
+}
+
+.movie-title {
+     margin: 0 0 8px;
+     font-size: 30px;
+     line-height: 1.1; /* definit l'espacement entre les lignes de texte */
+     letter-spacing: -0.8px; /* reduit l'espace entre les lettres */
+}
+
+.movie-original {
+     margin: 0 0 14px;
+}
+
+.movie-year {
+     border-radius: 18px;
+     padding: 14px 16px;
+     margin: 14px 0;
+}
+
+.movie-year-label {
+     margin: 0;
+     font-size: 12px;
+     text-transform: uppercase;
+     letter-spacing: .8px;
+     font-weight: 900; /* rend le texte tres gras */
+}
+
+.movie-year-value {
+     margin: 8px 0 0;
+     font-size: 16px;
+     font-weight: 600;
+}
+
+.movie-description {
+     margin: 0;
+}
+
+.movie-poster, .movie-banner {
+     width: 100%;
+     border-radius: 22px;
+}
+
+.movie-banner {
+     max-height: 420px; /* limite la hauteur du contenu */
+     object-fit: cover;
+     margin-top: 14px;
+}
+
+.movie-poster-caption {
+     margin: 10px 0 0;
+     text-align: center;
+     font-size: 13px;
+}
+
+.geo-info {
+     display: flex;
+     flex-direction: column; /* organise les elements de haut en bas */
+     gap: 10px;
+     border-radius: 22px;
+     padding: 16px;
+}
+
+.geo-row {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 14px;
+     align-items: center;
+     padding: 8px 0;
+}
+
+.geo-row-label {
+     flex: 0 0 160px;
+     min-width: 120px;
+}
+
+.geo-row-value {
+     flex: 1 1 auto;
+     min-width: 180px;
+}
+
+.geo-row.last-child {
+     border-bottom: 0;
+}
+
+.geo-label {
+     font-size: 12px;
+     text-transform: uppercase;
+     letter-spacing: .8px;
+     font-weight: 900;
+}
+
+.geo-value {
+     font-weight: 800;
+}
+
+.region-label {
+    font-size: 10px;
+    font-weight: 600;
+    fill: white;
+    pointer-events: none;
+    transition: opacity 0.2s; /* anime les changements en douceur */
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8), 0 0 4px rgba(0, 0, 0, 0.4);
+}
+
+.geo-loader {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 12px;
+     padding: 16px;
+     margin: 16px 0;
+     border-radius: 8px;
+     font-size: 14px;
+}
+
+.geo-spinner {
+     width: 20px;
+     height: 20px;
+     border: 3px solid;
+     border-top: 3px solid;
+     border-radius: 50%;
+}
+
+#geo-message {
+     margin: 16px 0;
+}

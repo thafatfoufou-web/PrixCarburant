@@ -1,0 +1,52 @@
+* {
+     box-sizing: border-box;
+}
+
+html, body {
+     margin: 0;
+     padding: 0;
+}
+
+html {
+     font-family: ui-sans-serif, system-ui, "Segoe UI", Inter, Roboto, Arial, "Noto Sans", sans-serif;
+     line-height: 1.55; /* espace entre les lignes de texte */
+     background-repeat: no-repeat;
+     background-size: 100% 100%;
+}
+
+body {
+     font-family: ui-sans-serif, system-ui, "Segoe UI", Inter, Roboto, Arial, "Noto Sans", sans-serif;
+     line-height: 1.55;
+     background: transparent;
+     display: flex; /* permet d'utiliser flexbox pour organiser les elements */
+     flex-direction: column; /* organise les elements de haut en bas */
+     min-height: 100vh;
+}
+
+body.is-open {
+     overflow: hidden; /* empeche le scroll de la page */
+     height: 100vh;
+}
+
+a {
+     text-decoration: none;
+}
+
+.app-container {
+     max-width: 1120px; /* limite la largeur du contenu */
+     margin: 0 auto; /* centre le contenu horizontalement */
+     padding: 0 20px;
+}
+
+/* Accessibility utility class */
+.visually-hidden {
+     position: absolute;
+     width: 1px;
+     height: 1px;
+     padding: 0;
+     margin: -1px;
+     overflow: hidden;
+     clip: rect(0, 0, 0, 0);
+     white-space: nowrap;
+     border-width: 0;
+}

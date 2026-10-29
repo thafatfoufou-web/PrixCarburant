@@ -1,0 +1,210 @@
+
+.app-shell {
+     flex: 1 1 auto; /* permet a l'element de grandir et retrecir automatiquement */
+}
+
+.app-main {
+     padding: 20px 0 35px;
+}
+
+
+.app-footer {
+     padding: 40px 0 30px;
+     margin-top: 60px;
+}
+
+.footer-row {
+     display: flex; /* permet d'utiliser flexbox pour organiser les elements */
+     justify-content: space-between; /* repartit l'espace entre les elements */
+     align-items: flex-start; /* aligne le contenu en haut */
+}
+
+.footer-left {
+     display: flex;
+     flex-direction: column; /* organise les elements de haut en bas */
+     gap: 10px; /* ajoute un espace entre les elements */
+}
+
+.footer-right {
+     display: flex;
+     flex-direction: column;
+     gap: 6px;
+     text-align: right;
+}
+
+.footer-title {
+     margin: 0;
+     font-size: 16px;
+     font-weight: 600; /* rend le texte plus gras */
+}
+
+.footer-text {
+     margin: 0;
+     font-size: 13px;
+}
+
+.footer-link {
+     display: inline-flex;
+     align-items: center;
+     gap: 6px;
+     font-size: 15px;
+     font-weight: 500;
+     text-decoration: underline;
+     transition: color 0.2s; /* anime les changements en douceur */
+}
+
+.footer-icon {
+     font-size: 18px;
+}
+
+.footer-subtext {
+     margin: 0;
+     font-size: 12px;
+}
+
+.footer-link--tech {
+     text-decoration: underline;
+}
+
+.footer-link--cy {
+     text-decoration: underline;
+}
+
+.page-head {
+     padding: 10px 0 22px;
+}
+
+.page-head-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 800px; /* limite la largeur du contenu */
+    margin: 0 auto; /* centre le contenu horizontalement */
+    text-align: center;
+}
+
+.page-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 1.2; /* espace entre les lignes de texte */
+}
+
+.page-subtitle {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 875px;
+     margin: 0 auto;
+}
+
+.page-features {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 24px;
+     flex-wrap: wrap; /* permet aux elements de passer a la ligne */
+     margin-top: 8px;
+}
+
+.feature-item {
+     display: flex;
+     align-items: center;
+     gap: 8px;
+     padding: 8px 16px;
+     border-radius: 999px;
+     font-size: 13px;
+     font-weight: 600;
+}
+
+.feature-item svg {
+     width: 18px;
+     height: 18px;
+}
+
+.nav-icon {
+     width: 16px;
+     height: 16px;
+     margin-right: 6px;
+     opacity: 0.8;
+}
+
+.app-nav-link {
+     display: inline-flex;
+     align-items: center;
+}
+
+.layout-two {
+     display: flex;
+     flex-wrap: nowrap;
+     gap: 18px;
+     align-items: flex-start; /* aligne les elements en haut */
+     min-height: 100%;
+}
+
+.layout-two > .panel-left {
+     flex: 0 0 auto;
+     min-width: 320px;
+     max-width: 670px;
+     display: flex;
+     flex-direction: column;
+     gap: 14px;
+}
+
+.layout-two > .panel-right {
+     flex: 1 1 auto;
+     min-width: 400px;
+     display: flex;
+     flex-direction: column;
+     align-self: stretch; /* etire pour correspondre a la hauteur du parent */
+}
+
+.panel {
+     min-width: 0;
+     display: flex;
+     flex-direction: column;
+}
+
+.panel-right .card {
+     flex: 1 1 auto;
+     display: flex;
+     flex-direction: column;
+}
+
+.panel-left .panel-block {
+     margin-bottom: 0;
+}
+
+.panel-left .panel-block.first-child .map-section {
+     flex: 0 0 auto;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.map-image {
+     max-width: none;
+     width: auto;
+     height: auto;
+}
+
+.panel-left .panel-block.last-child {
+     flex: 0 0 auto;
+     display: flex;
+}
+
+.panel-left .panel-block.last-child .card-form {
+     flex: 1 1 auto;
+     display: flex;
+     flex-direction: column;
+}
+
+.panel-left .panel-block.last-child .card-form form {
+     flex: 1 1 auto;
+}
+
+.panel-block {
+     margin-bottom: 14px;
+}

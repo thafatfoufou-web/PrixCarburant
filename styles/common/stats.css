@@ -1,0 +1,260 @@
+.stats-grid {
+     display: flex; /* permet d'utiliser flexbox pour organiser les elements */
+     flex-wrap: wrap; /* permet aux elements de passer a la ligne suivante */
+     gap: 14px; /* ajoute un espace entre les elements */
+     text-align: left;
+}
+
+.stats-box {
+     flex: 1 1 50%; /* permet a l'element de grandir et retrecir avec une base de 50% */
+     min-width: 140px;
+     padding: 20px;
+}
+
+.stats-value {
+     font-size: 40px;
+     line-height: 1; /* definit l'espacement entre les lignes de texte */
+     font-weight: 950; /* rend le texte tres gras */
+     letter-spacing: -1px; /* reduit l'espace entre les lettres */
+}
+
+.stats-label {
+     margin-top: 10px;
+     font-size: 12px;
+     letter-spacing: .8px;
+     text-transform: uppercase;
+     font-weight: 900;
+}
+
+.histogram-section {
+     margin-top: 8px;
+     display: flex;
+     flex-direction: column; /* organise les elements de haut en bas */
+     max-height: 600px; /* limite la hauteur du contenu */
+     overflow-y: auto; /* ajoute un scroll vertical si le contenu depasse */
+     padding-right: 6px;
+}
+
+.histogram-item {
+     display: flex;
+     align-items: center; /* aligne le contenu au centre verticalement */
+     gap: 12px;
+     padding: 10px 12px;
+     border-radius: 8px;
+     margin-bottom: 6px;
+     transition: all 0.2s ease; /* anime les changements en douceur */
+}
+
+.rank-badge {
+     flex-shrink: 0; /* empeche l'element de retrecir */
+     display: inline-flex;
+     align-items: center;
+     justify-content: center; /* centre le contenu horizontalement */
+     width: 26px;
+     height: 26px;
+     font-size: 11px;
+     font-weight: 800;
+     border-radius: 6px;
+}
+
+.histogram-body {
+     flex: 1 1 auto;
+     display: flex;
+     flex-direction: column;
+     gap: 6px;
+     min-width: 0;
+}
+
+.histogram-row {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     gap: 12px;
+}
+
+.histogram-label-left {
+     font-size: 13px;
+     overflow: hidden; /* cache le contenu qui depasse */
+     text-overflow: ellipsis;
+     white-space: nowrap; /* garde le texte sur une seule ligne */
+}
+
+.histogram-count {
+     flex-shrink: 0;
+     font-size: 14px;
+     font-weight: 700;
+     white-space: nowrap;
+}
+
+.histogram-bar-container {
+     height: 8px;
+     border-radius: 999px;
+     overflow: hidden;
+}
+
+.histogram-bar-fill {
+     display: block;
+     height: 100%;
+     border-radius: 999px;
+     transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+     min-width: 4%;
+}
+
+.tech-section {
+     margin-bottom: 20px;
+}
+
+.tech-section-title {
+     margin: 0 0 12px;
+     font-size: 15px;
+     letter-spacing: -.2px;
+     text-transform: uppercase;
+     font-weight: 900;
+}
+
+.stats-section {
+    margin-bottom: 32px;
+}
+
+.stats-overview {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.stat-card {
+    flex: 1 1 280px;
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    transition: all 0.2s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-2px); /* deplace la carte vers le haut de 2px */
+}
+
+.stat-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.stat-icon svg {
+    width: 28px;
+    height: 28px;
+}
+
+.stat-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex: 1;
+}
+
+.stat-value {
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+.stat-label {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.stat-description {
+    font-size: 13px;
+    margin: 4px 0 0 0;
+    line-height: 1.5;
+}
+
+.stats-card {
+    margin-top: 32px;
+}
+
+.card-header {
+    margin-bottom: 24px;
+}
+
+.card-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 22px;
+    font-weight: 800;
+    margin: 0 0 8px 0;
+}
+
+.card-title-icon {
+    width: 26px;
+    height: 26px;
+}
+
+.card-subtitle {
+    font-size: 14px;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.histogram-content {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    min-width: 0;
+    height: auto;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    border-radius: 16px;
+}
+
+.empty-state-icon {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.empty-state-icon svg {
+    width: 32px;
+    height: 32px;
+}
+
+.empty-state-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 999px;
+    transition: all 0.2s ease;
+}
+
+.empty-state-cta:hover {
+    transform: translateY(-2px);
+    text-decoration: none;
+}
+
+.empty-state-cta svg {
+    width: 18px;
+    height: 18px;
+}

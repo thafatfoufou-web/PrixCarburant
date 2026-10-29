@@ -1,0 +1,202 @@
+.footer-content {
+     display: flex; /* permet d'utiliser flexbox pour organiser les elements */
+     flex-wrap: wrap; /* permet aux elements de passer a la ligne */
+     gap: 40px; /* ajoute un espace entre les elements */
+     padding: 40px 0;
+}
+
+.footer-section {
+     flex: 2; /* prend 2 fois plus d'espace que les autres */
+     display: flex;
+     flex-direction: column; /* organise les elements de haut en bas */
+     gap: 16px;
+}
+
+.footer-section:nth-child(2),
+.footer-section:nth-child(3) {
+     flex: 1;
+}
+
+.footer-title {
+     display: flex;
+     align-items: center; /* aligne le contenu au centre verticalement */
+     gap: 10px;
+     font-size: 18px;
+     font-weight: 800; /* rend le texte plus gras */
+     margin: 0 0 8px 0;
+}
+
+.footer-icon {
+     width: 24px;
+     height: 24px;
+}
+
+.footer-description {
+     font-size: 14px;
+     line-height: 1.7; /* espace entre les lignes de texte */
+     margin: 0;
+}
+
+.footer-features {
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+     margin-top: 8px;
+}
+
+.footer-feature {
+     display: flex;
+     align-items: center;
+     gap: 10px;
+     font-size: 14px;
+     font-weight: 600;
+}
+
+.footer-feature svg {
+     width: 18px;
+     height: 18px;
+     flex-shrink: 0; /* empeche l'element de retrecir */
+}
+
+.footer-subtitle {
+     font-size: 14px;
+     font-weight: 700;
+     margin: 0 0 12px 0;
+     text-transform: uppercase;
+     letter-spacing: 0.5px; /* ajoute de l'espace entre les lettres */
+}
+
+.footer-nav {
+     display: flex;
+     flex-direction: column;
+     gap: 8px;
+}
+
+.footer-nav-link {
+     display: inline-flex;
+     align-items: center;
+     font-size: 14px;
+     text-decoration: underline;
+     transition: all 0.2s ease; /* anime les changements en douceur */
+     padding: 6px 0;
+}
+
+.footer-description-small {
+     font-size: 14px;
+     line-height: 1.6;
+     margin: 0;
+}
+
+.footer-cyu-link {
+     display: inline-flex;
+     align-items: center;
+     white-space: nowrap; /* garde le texte sur une seule ligne */
+     gap: 8px;
+     font-size: 14px;
+     font-weight: 600;
+     padding: 8px 0;
+     transition: all 0.2s ease;
+}
+
+.footer-cyu-link:hover {
+     text-decoration: none;
+}
+
+.footer-cyu-link svg {
+     width: 18px;
+     height: 18px;
+}
+
+.footer-sources {
+     list-style: none;
+     margin: 0;
+     padding: 0;
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+}
+
+.footer-sources li {
+     margin: 0;
+     padding: 0;
+}
+
+.footer-source-link {
+     display: inline-flex;
+     align-items: center;
+     gap: 8px;
+     font-size: 14px;
+     transition: all 0.2s ease;
+}
+
+.footer-source-link:hover {
+     text-decoration: underline;
+}
+
+.footer-source-link svg {
+     width: 16px;
+     height: 16px;
+     flex-shrink: 0;
+     opacity: 0.7;
+}
+
+.source-desc {
+     display: block;
+     font-size: 14px;
+     margin-top: 2px;
+     margin-left: 24px;
+}
+
+.footer-bottom {
+     display: flex;
+     align-items: center;
+     justify-content: space-between; /* repartit l'espace entre les elements */
+     padding: 20px 0;
+     gap: 16px;
+     flex-wrap: wrap;
+}
+
+.footer-bottom .w3c-note {
+     display: flex;
+     align-items: center;
+     font-size: 14px;
+     gap: 6px;
+     margin: 0;
+}
+
+.footer-bottom .w3c-note svg {
+     width: 16px;
+     height: 16px;
+}
+
+.footer-copyright {
+     display: flex;
+     align-items: center;
+     gap: 8px;
+     font-size: 14px;
+     margin: 0;
+}
+
+.footer-copyright svg {
+     width: 16px;
+     height: 16px;
+}
+
+.footer-version {
+     font-size: 14px;
+     margin: 0;
+}
+
+.mobile-link-icon-wrap {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     width: 24px;
+     height: 24px;
+     margin-right: 8px;
+}
+
+.mobile-link-svg {
+     width: 20px;
+     height: 20px;
+}

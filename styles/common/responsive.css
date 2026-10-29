@@ -1,0 +1,553 @@
+/* Tablet (768px - 1024px) */
+@media (max-width: 1024px) { /* ecrans tablette */
+     .app-container {
+         max-width: 100%; /* limite la largeur du contenu */
+         padding: 0 16px;
+     }
+
+     .layout-two {
+         gap: 14px; /* ajoute un espace entre les elements */
+     }
+
+     .layout-two > .panel-left,
+     .layout-two > .panel-right {
+         flex: 1 1 100%; /* permet a l'element de grandir et retrecir avec une base de 100% */
+     }
+
+     .map-container {
+         overflow-x: auto; /* ajoute un scroll horizontal si le contenu depasse */
+     }
+
+    .contact-section {
+        padding: 24px 16px;
+        max-width: none;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .contact-form-wrapper {
+        flex: 1 1 100%;
+        width: 100%;
+        max-width: none;
+    }
+
+    .contact-info {
+        position: static;
+        order: -1;
+        flex: 1 1 100%;
+        width: 100%;
+        max-width: none;
+    }
+
+    .contact-info-card {
+        flex: 1 1 100%;
+        width: 100%;
+        max-width: none;
+        padding: 24px;
+    }
+
+    .contact-form-wrapper {
+        padding: 24px;
+    }
+}
+
+/* Smartphone (< 768px) */
+@media (max-width: 768px) { /* ecrans smartphone */
+     .app-header {
+          display: none;
+     }
+
+     .app-header-mobile {
+          display: block;
+          position: sticky; /* reste fixe en haut lors du scroll */
+          top: 0;
+          z-index: 9999; /* place l'element au-dessus des autres */
+          backdrop-filter: blur(14px); /* rend l'arriere-plan flou */
+     }
+
+     .app-header-mobile .app-header-row {
+          min-height: 56px;
+          padding: 6px 0;
+          justify-content: space-between; /* repartit l'espace entre les elements */
+     }
+
+     .app-header-mobile .app-brand {
+          min-width: auto;
+          flex: 1 1 auto;
+     }
+
+     .app-header-mobile .app-brand-mark {
+          width: 32px;
+          height: 32px;
+     }
+
+     .app-header-mobile .app-brand-mark img {
+          width: 32px;
+          height: 32px;
+     }
+
+     .app-header-mobile .app-brand-name {
+          display: inline;
+          font-size: 14px;
+     }
+
+      .layout-two {
+           flex-direction: column; /* organise les elements de haut en bas */
+           gap: 16px;
+           align-items: stretch; /* etire les elements pour qu'ils aient la meme largeur */
+      }
+
+      .layout-two > .panel-left,
+      .layout-two > .panel-right {
+           flex: 0 0 auto; /* ne grandit ni ne retrecit */
+           min-width: 0;
+           width: 100%;
+           align-self: auto; /* annule align-self: stretch du desktop */
+      }
+
+      .panel-left {
+           margin-right: 0;
+      }
+
+      .panel-right {
+           margin-left: 0;
+      }
+
+      .panel-right .card {
+           height: auto; /* annule height: 100% du desktop */
+           flex: 0 0 auto; /* ne grandit ni ne retrecit - s'adapte au contenu */
+      }
+
+      .map-container {
+           max-width: 100%;
+           overflow-x: auto; /* ajoute un scroll horizontal si necessaire */
+      }
+
+      .map-image {
+           width: 100%;
+           height: auto;
+           max-width: 650px;
+      }
+
+      .map-overlay {
+           width: 100%;
+           height: auto;
+           max-width: 650px;
+      }
+
+     .page-head {
+          padding: 8px 0 16px;
+     }
+
+     .page-title {
+          font-size: 24px;
+     }
+
+     .page-subtitle {
+          font-size: 13px;
+     }
+
+     .card {
+          padding: 12px;
+          border-radius: 14px;
+     }
+
+     .form-row {
+         margin-bottom: 12px;
+     }
+
+     .form-label {
+         font-size: 13px;
+     }
+
+     .form-select {
+         font-size: 14px;
+         padding: 10px 12px;
+     }
+
+     .form-btn {
+         padding: 12px 20px;
+         font-size: 14px;
+     }
+
+     .results-head {
+         flex-direction: row;
+     }
+
+     .results-title {
+         font-size: 20px;
+     }
+
+     .results-meta {
+         font-size: 12px;
+     }
+
+     .results-list {
+         flex: 1 1 auto; /* permet de grandir et retrecir */
+         max-height: 600px; /* limite la hauteur maximale */
+         overflow-y: auto; /* scroll vertical si necessaire */
+         min-height: 0; /* permet de retrecir en dessous de la taille du contenu */
+     }
+
+     .station-list {
+         gap: 10px;
+     }
+
+     .station-item {
+         padding: 14px;
+     }
+
+     .station-name {
+         font-size: 15px;
+     }
+
+     .station-address {
+         font-size: 13px;
+     }
+
+     .station-address-block {
+         flex-direction: column;
+         gap: 8px;
+     }
+
+     .station-address-content {
+         display: flex;
+         align-items: flex-start;
+         gap: 8px;
+     }
+
+     .maps-link {
+         font-size: 12px;
+     }
+
+     .station-prices {
+         flex-wrap: wrap;
+         gap: 6px;
+     }
+
+     .price-tag {
+          font-size: 12px;
+          padding: 4px 8px;
+      }
+
+      .movie-layout {
+          display: block;
+      }
+
+      .movie-poster-col {
+          width: 100%;
+          max-width: 100%;
+      }
+
+      .movie-poster-col .movie-poster {
+          display: block;
+          margin: 0 auto;
+          max-width: 100%;
+          width: auto;
+          max-height: 400px;
+      }
+
+      .app-footer {
+          padding: 12px 0;
+      }
+
+      .footer-row {
+          gap: 8px;
+      }
+
+      .footer-title {
+          font-size: 12px;
+      }
+
+      .footer-text {
+          font-size: 11px;
+      }
+
+      .footer-link {
+          font-size: 11px;
+      }
+
+      .footer-subtext {
+          font-size: 11px;
+      }
+
+      .footer-left,
+      .footer-right {
+          text-align: left;
+      }
+
+      .map-section {
+          width: 100%;
+          overflow: hidden; /* cache le contenu qui depasse */
+      }
+
+    .page-title {
+        font-size: 26px;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .page-features {
+        gap: 12px;
+    }
+
+    .feature-item {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .stats-overview {
+        flex-direction: column;
+    }
+
+    .stat-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .histogram-section {
+        max-height: 400px;
+    }
+
+    .histogram-item {
+        display: flex; /* permet d'utiliser flexbox pour organiser les elements */
+        align-items: flex-start;
+        gap: 8px;
+        padding: 6px 8px;
+        height: auto;
+        min-height: 0;
+    }
+
+    .rank-badge {
+        width: 22px;
+        height: 22px;
+        font-size: 10px;
+        margin-top: 2px;
+    }
+
+    .histogram-body {
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        min-width: 0;
+    }
+
+    .histogram-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+    }
+
+    .histogram-label-left {
+        font-size: 11px;
+        line-height: 1.3; /* definit l'espacement entre les lignes de texte */
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap; /* garde le texte sur une seule ligne */
+    }
+
+    .histogram-count {
+        font-size: 11px;
+        flex-shrink: 0;
+        white-space: nowrap;
+    }
+
+    .histogram-bar-container {
+        height: 4px;
+    }
+
+    .prices-grid {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .price-item {
+        padding: 8px 12px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        flex: none;
+    }
+
+    .price-header {
+        flex: 1;
+    }
+
+    .price-value {
+        font-size: 18px;
+        margin-left: auto;
+    }
+
+    .contact-section {
+        padding: 24px 16px;
+    }
+
+    .contact-form-wrapper {
+        flex: 1 1 100%;
+        width: 100%;
+        max-width: none;
+        padding: 20px;
+    }
+
+    .contact-info-card {
+        flex: 1 1 100%;
+        width: 100%;
+        max-width: none;
+        padding: 20px;
+    }
+
+    .contact-form {
+        gap: 20px;
+    }
+
+    .contact-form .form-group {
+        gap: 6px;
+    }
+
+    .contact-form .form-input,
+    .contact-form .form-textarea {
+        padding: 10px 14px;
+        font-size: 16px;
+    }
+
+    .contact-form .btn {
+        padding: 14px 20px;
+        font-size: 16px;
+    }
+
+    .contact-form .alert {
+        padding: 16px;
+        gap: 12px;
+    }
+
+    .contact-info-item {
+        padding: 12px 0;
+    }
+
+    .contact-info-icon {
+        width: 36px;
+        height: 36px;
+    }
+}
+
+/* Smartphone (< 480px) */
+@media (max-width: 480px) { /* petits ecrans smartphone */
+     .stats-box {
+          flex: 1 1 100%; /* permet a l'element de grandir et retrecir avec une base de 100% */
+     }
+
+    .contact-section {
+        padding: 20px 12px;
+    }
+
+    .contact-section {
+        padding: 20px 12px;
+        max-width: none;
+    }
+
+    .contact-form-wrapper,
+    .contact-info-card {
+        flex: 1 1 100%;
+        width: 100%;
+        max-width: none;
+        padding: 16px;
+    }
+
+    .contact-info-title {
+        font-size: 16px;
+    }
+
+     .page-title {
+         font-size: 24px;
+     }
+
+     .page-subtitle {
+         font-size: 12px;
+     }
+
+     .card {
+         padding: 14px;
+         border-radius: 14px;
+     }
+
+     .btn-reset-text {
+         display: none; /* cache le texte sur mobile */
+     }
+
+     .btn-reset {
+         padding: 8px; /* reduit le padding quand il n'y a que l'icone */
+     }
+
+     .form-select {
+         font-size: 13px;
+         padding: 8px 10px;
+     }
+
+     .form-btn {
+         width: 100%;
+     }
+
+     .station-prices {
+          flex-direction: column;
+      }
+
+      .station-address-block {
+          flex-direction: column;
+          gap: 6px;
+      }
+
+      .maps-link {
+          font-size: 11px;
+      }
+
+      .movie-layout {
+          display: block;
+      }
+
+      .movie-poster-col {
+          width: 100%;
+          max-width: 100%;
+      }
+
+      .movie-poster-col .movie-poster {
+           display: block;
+           margin: 0 auto;
+           max-width: 100%;
+           width: auto;
+           max-height: 300px;
+       }
+
+    .page-features {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .feature-item {
+        justify-content: center;
+    }
+
+    .stat-value {
+        font-size: 32px;
+    }
+
+
+    .histogram-bar-container {
+        height: 8px;
+    }
+
+    .histogram-bar-fill {
+        height: 8px;
+    }
+}

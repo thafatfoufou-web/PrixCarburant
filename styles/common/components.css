@@ -1,0 +1,323 @@
+.card {
+     border-radius: 22px;
+     padding: 20px;
+     margin-bottom: 24px;
+}
+
+.panel-right .card {
+     flex: 1 1 0; /* permet a l'element de grandir et retrecir avec une base de 0 */
+     min-height: 0; /* permet au flex item de retrecir en dessous de sa taille de contenu */
+     display: flex; /* permet d'utiliser flexbox pour organiser les elements */
+     flex-direction: column; /* organise les elements de haut en bas */
+     overflow: hidden; /* cache le contenu qui depasse */
+}
+
+.card-head {
+     margin-bottom: 14px;
+}
+
+.card-head-row {
+     display: flex;
+     align-items: flex-start;
+     justify-content: space-between;
+     gap: 16px;
+}
+
+.card-head-left {
+     flex: 1 1 auto;
+}
+
+.card-head-right {
+     flex: 0 0 auto;
+}
+
+.btn-reset {
+     display: inline-flex;
+     align-items: center;
+     gap: 6px;
+     padding: 8px 14px;
+     border-radius: 10px;
+     font-size: 13px;
+     font-weight: 600;
+     text-decoration: none;
+     transition: all 0.2s ease;
+     cursor: pointer;
+}
+
+.btn-reset svg {
+     width: 16px;
+     height: 16px;
+     flex-shrink: 0;
+}
+
+.btn-reset-text {
+     white-space: nowrap;
+}
+
+.card-title {
+     margin: 0;
+     font-size: 16px;
+     letter-spacing: -0.3px; /* reduit l'espace entre les lettres */
+     line-height: 1.25; /* espace entre les lignes de texte */
+}
+
+.card-hint {
+     margin: 6px 0 0;
+     font-size: 13px;
+}
+
+.form-row {
+     margin-bottom: 12px;
+}
+
+.form-label {
+     display: block;
+     margin: 0 0 8px;
+     font-size: 12px;
+     font-weight: 800; /* rend le texte plus gras */
+     letter-spacing: .8px;
+     text-transform: uppercase;
+}
+
+.form-select {
+     width: 100%;
+     padding: 12px 14px;
+     border-radius: 14px;
+     font-size: 15px;
+     transition: border-color .18s ease, box-shadow .18s ease, transform .18s ease; /* animation de transition sur le border, le shadow et le transform */
+}
+
+/* Step-by-step form design */
+.form-step {
+     margin-bottom: 20px;
+     padding: 16px;
+     border-radius: 16px;
+     transition: all 0.3s ease;
+}
+
+.form-step.is-active {
+     padding: 18px;
+}
+
+.form-step.is-completed {
+     opacity: 0.7;
+}
+
+.form-step.is-disabled {
+     opacity: 0.4;
+     pointer-events: none;
+}
+
+.step-header {
+     display: flex;
+     align-items: center;
+     gap: 12px;
+     margin-bottom: 12px;
+}
+
+.step-number {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 32px;
+     height: 32px;
+     border-radius: 50%;
+     font-size: 14px;
+     font-weight: 800;
+     flex-shrink: 0;
+     transition: all 0.3s ease;
+}
+
+.step-title {
+     margin: 0;
+     font-size: 14px;
+     font-weight: 700;
+     letter-spacing: 0.3px;
+     flex: 1;
+}
+
+.step-content {
+     margin-left: 44px;
+}
+
+.step-actions {
+     margin-top: 12px;
+     display: flex;
+     gap: 8px;
+}
+
+.step-selected-value {
+     display: inline-flex;
+     align-items: center;
+     gap: 8px;
+     padding: 6px 12px;
+     border-radius: 8px;
+     font-size: 13px;
+     font-weight: 600;
+     margin-top: 8px;
+}
+
+.step-selected-value svg {
+     width: 16px;
+     height: 16px;
+     flex-shrink: 0;
+}
+
+.btn-change {
+     display: inline-flex;
+     align-items: center;
+     gap: 6px;
+     padding: 6px 12px;
+     border-radius: 8px;
+     font-size: 12px;
+     font-weight: 600;
+     cursor: pointer;
+     transition: all 0.2s ease;
+     text-decoration: none;
+}
+
+.btn-change svg {
+     width: 14px;
+     height: 14px;
+}
+
+.form-step-select {
+     width: 100%;
+     padding: 12px 14px;
+     border-radius: 12px;
+     font-size: 15px;
+     transition: all .18s ease;
+}
+
+.form-step-select:focus {
+     outline: 2px solid;
+     outline-offset: 2px;
+}
+
+.step-help-text {
+     margin-top: 8px;
+     font-size: 12px;
+     opacity: 0.8;
+}
+
+.form-submit-btn {
+     display: inline-flex;
+     align-items: center; /* aligne le contenu au centre verticalement */
+     justify-content: center; /* aligne le contenu au centre horizontalement */
+     width: 100%;
+     padding: 12px 20px;
+     border-radius: 14px;
+     font-size: 15px;
+     font-weight: 700;
+     letter-spacing: 0.2px;
+     cursor: pointer;
+     transition: transform .18s ease, box-shadow .18s ease, background .18s ease, border-color .18s ease;
+     margin-top: 8px;
+}
+
+.form-submit-btn:hover {
+     transform: translateY(-1px); /* deplace le bouton vers le haut de 1px */
+}
+
+.form-submit-btn:focus {
+     transform: translateY(0);
+     outline: 2px solid;
+     outline-offset: 2px;
+}
+
+.last-visit {
+     margin: 12px 0 0;
+     font-size: 13px;
+}
+
+.inline-group {
+     display: flex;
+     gap: 8px; /* ajoute un espace entre les elements */
+     align-items: center;
+}
+
+.inline-group .form-select {
+     flex: 1 1 auto; /* permet a l'element de grandir et retrecir */
+}
+
+.form-btn-small {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     padding: 8px 14px;
+     border-radius: 12px;
+     font-size: 12px;
+     font-weight: 700;
+     letter-spacing: 0.3px;
+     cursor: pointer;
+     white-space: nowrap; /* garde le texte sur une seule ligne */
+     transition: transform .18s ease, box-shadow .18s ease, background .18s ease, border-color .18s ease;
+}
+
+.form-btn-small:hover {
+     transform: translateY(-1px);
+}
+
+.form-btn-small:focus {
+     transform: translateY(0);
+     outline: 2px solid;
+     outline-offset: 2px;
+}
+
+.form-apply-btn {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 100%;
+     padding: 10px 18px;
+     border-radius: 12px;
+     font-size: 13px;
+     font-weight: 700;
+     letter-spacing: 0.3px;
+     cursor: pointer;
+     white-space: nowrap;
+     transition: transform .18s ease, box-shadow .18s ease, background .18s ease, border-color .18s ease;
+     margin-top: 8px;
+}
+
+.form-apply-btn:hover {
+     transform: translateY(-1px);
+}
+
+.form-apply-btn:focus {
+     transform: translateY(0);
+     outline: 2px solid;
+     outline-offset: 2px;
+}
+
+.alert {
+     border-radius: 18px;
+     padding: 14px 16px;
+     margin-top: 20px;
+}
+
+.alert-info {
+     margin-bottom: 1rem;
+}
+
+.geo-suggestion-alert {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.empty-state {
+     border-radius: 22px;
+     padding: 20px;
+     text-align: center;
+}
+
+.empty-title {
+     margin: 0;
+     font-size: 16px;
+     letter-spacing: -.2px;
+}
+
+.empty-text {
+     margin: 10px 0 0;
+     font-size: 14px;
+}

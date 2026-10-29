@@ -1,0 +1,120 @@
+
+.app-header {
+     position: sticky; /* reste fixe en haut lors du scroll */
+     top: 0;
+     z-index: 9999; /* place l'element au-dessus des autres */
+     backdrop-filter: blur(14px); /* rend l'arriere-plan flou */
+}
+
+
+.app-header-row {
+     min-height: 72px;
+     display: flex; /* permet d'utiliser flexbox pour organiser les elements */
+     align-items: center; /* aligne le contenu au centre verticalement */
+     justify-content: space-between; /* repartit l'espace entre les elements */
+     gap: 14px; /* ajoute un espace entre les elements */
+     padding: 10px 0;
+}
+
+.app-brand {
+     display: flex;
+     align-items: center;
+     gap: 12px;
+     font-weight: 800; /* rend le texte plus gras */
+     letter-spacing: -0.2px; /* reduit l'espace entre les lettres */
+     min-width: 220px;
+}
+
+.app-brand-mark {
+     width: 38px;
+     height: 38px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.app-brand-mark img {
+     width: 38px;
+     height: 38px;
+     border-radius: 0;
+     box-shadow: none;
+}
+
+
+.app-brand-name {
+     font-size: 15px;
+     line-height: 1.15; /* espace entre les lignes de texte */
+     margin-left: 8px;
+}
+
+.app-nav {
+     display: flex;
+     align-items: center;
+     gap: 6px;
+     flex: 1 1 auto; /* permet a l'element de grandir et retrecir */
+     justify-content: center;
+}
+
+.app-nav-link {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     padding: 10px 14px;
+     border-radius: 999px;
+     font-weight: 700;
+     font-size: 14px;
+     letter-spacing: .2px;
+     transition: background .18s ease, border-color .18s ease, transform .18s ease; /* anime les changements en douceur */
+}
+
+.app-nav-link:hover {
+     text-decoration: none;
+}
+
+.is-active {
+     border-radius: 999px;
+}
+
+.app-actions {
+     display: flex;
+     align-items: center;
+     gap: 10px;
+     justify-content: flex-end; /* aligne le contenu a droite */
+     min-width: 120px;
+}
+
+.app-header-mobile {
+     display: none;
+}
+
+.app-icon-btn--text {
+     width: auto;
+     padding: 8px 14px;
+     font-size: 14px;
+     font-weight: 600;
+     border-radius: 999px;
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.app-icon-btn {
+     width: 42px;
+     height: 42px;
+     border-radius: 14px;
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
+}
+
+.app-icon-btn:hover {
+     transform: translateY(-1px); /* deplace le bouton vers le haut de 1px */
+     text-decoration: none;
+}
+
+.app-icon-btn img {
+     width: 20px;
+     height: 20px;
+     border-radius: 8px;
+}
